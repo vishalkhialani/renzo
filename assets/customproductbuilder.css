@@ -37,6 +37,10 @@
   display: none;
 }
 
+#product-builder .cpb-category-options-container span.option.active .cpb-active {
+  pointer-events: none;
+}
+
 
 @media (max-width: 1023px) {
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-preview-container {
