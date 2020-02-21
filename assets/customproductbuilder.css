@@ -9,13 +9,13 @@
 }
 
 .cpb-loading-version {
-	display: none;
+  display: none;
 }
 
 /* Author: Hnguyen NLS Tech */
 
 #product-builder {
-	max-width: 1400px;
+  max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 49px 35px 0px 35px;
@@ -41,13 +41,21 @@
   pointer-events: none;
 }
 
+#product-builder .cpb-theme-provider.alpine-white .cpb-layout {
+  width: 100%;
+}
+
+#product-builder .cpb-layout .cpb-preview-container {
+  margin-top: 0;
+}
+
 
 @media (max-width: 1023px) {
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-preview-container {
       max-width: 60%;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
-   	  max-width: 40%;
+      max-width: 40%;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
       flex-direction: row-reverse;
@@ -153,6 +161,7 @@
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
     max-width: 30%;
+    position: initial;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-preview-container {
     max-width: 70%;
@@ -167,7 +176,7 @@
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-panels-container .cpb-panels-tabs li {
     padding-bottom: 15px;
   }
-  #product-builder  .cpb-product-actions {
+  #product-builder .cpb-product-actions {
     position: absolute;
     bottom: 200px;
     left: 0;
@@ -205,12 +214,24 @@
   }
 }
 
+@media (max-width: 640px) {
+  #product-builder .cpb-product-actions {
+    bottom: 300px;
+  }
+  #product-builder .cpb-panels-tabs .cpb-product-panel.react-tabs__tab-panel--selected {
+    bottom: 100px;
+  }
+}
+
 @media (max-width: 568px) {
+  #product-builder .cpb-panels-tabs {
+    display: block;
+  }
    #product-builder .cpb-preview-arrows i {
       font-size: 25px;
    }
   #product-builder .react-tabs__tab-list {
-    position: absolute;
+    position: static;
     left: 0;
     bottom: 210px;
     width: 100%;
@@ -220,7 +241,7 @@
     z-index: 1;
   }
   #product-builder .cpb-panels-tabs .cpb-product-panel.react-tabs__tab-panel--selected {
-    position: absolute;
+    position: static;
     bottom: 100px;
     left: 0;
     width: 100%;
@@ -232,19 +253,21 @@
     flex-shrink: 0;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
-    padding-bottom: 250px;
+    display: block;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-preview-container {
     max-width: 100%;
     position: relative;
     z-index: 99;
+    margin-bottom: 0;
   }
   #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
-    max-width: 0;
+    max-width: 100%;
     min-height: 0 !important;
+    width: 100%;
   }
   #product-builder .cpb-product-actions {
-    position: absolute;
+    position: static;
     bottom: 0;
     left: 0;
     margin-bottom: 0;
@@ -252,4 +275,13 @@
     padding: 0 10px;
     z-index: 1;
   }
+}
+
+
+#product-builder .lnr-cart:before {
+    content: none;
+}
+#product-builder .cpb-theme-provider.alpine-white .cpb-layout .cpb-panels-container .cpb-panels-tabs li {
+    color: black;
+ 
 }
