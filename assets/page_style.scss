@@ -163,3 +163,22 @@
 .cpb-category-title .sc-eTuwsz.jfgCyn {
   margin-left: 10px;
 }
+
+#product-builder .cpb-add-to-cart-button {
+  background: #f00;
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+  min-width: 300px;
+  height: 40px;
+  font-size: 13px;
+  color: #fff;
+  opacity: 1;
+  margin-top: 10px;
+}
+#product-builder .cpb-add-to-cart-button:hover {
+  opacity: 0.8;
+}
+#product-builder .cpb-product-price .cpb-money {
+  font-size: 1.26667em;
+}
