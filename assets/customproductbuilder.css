@@ -109,6 +109,7 @@
   }
   #product-builder .cpb-add-to-cart-button {
       margin-top: 10px;
+      min-width: 100px;
   }
 }
 
@@ -274,6 +275,15 @@
     width: 100%;
     padding: 0 10px;
     z-index: 1;
+  }
+  #product-builder .cpb-add-to-cart-button {
+      min-width: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  #product-builder .cpb-add-to-cart-button {
+      min-width: 200px;
   }
 }
 
