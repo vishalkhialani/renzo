@@ -26,10 +26,9 @@
   }
   
    #content_add_option {
-        position: relative;
-        width: 400px;
-        left: -432px;
-        display : none;
+        position: static;
+        width: 100%;
+     margin-top: 20px;
 
   }
   .cpb-loading-spinner {
@@ -43,30 +42,31 @@
       margin-top: -30px;
       padding-bottom: 30px !important;
   }
+  #content_add_option iframe {
+    max-width: 100%;
+    height: auto !important;
+  }
  
 }
 @media screen and (max-width: 640px) {
    #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
     z-index: 99;
   }
- #content_add_option {
-        position: relative;
-        width: 400px;
-        left: -432px;
-        display : none;
-
+  #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
+      margin-top: -30px;
+      padding-bottom: 0 !important;
   }
+  #content_add_option {
+    margin-top: -70px;
+  }
+
 }
 @media screen and (max-width: 568px) {
   #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
     z-index: 99 !important;
   }
   #content_add_option {
-        position: relative;
-        width: 400px;
-        left: -432px;
-/*         display : none; */
-
+    margin-top: 30px;
   }
 }
 @media (max-width: 480px) {
@@ -79,7 +79,7 @@
   } */
   #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
       margin-top: -30px;
-      padding-bottom: 190px !important;
+      padding-bottom: 0 !important;
   }
    #product-builder .cpb-theme-provider.alpine-white .cpb-panels-container {
       z-index: 99 !important
@@ -93,7 +93,7 @@
   }
    #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
       margin-top: -30px;
-      padding-bottom: 200px !important;
+      padding-bottom: 0 !important;
   }
   .site-header__logo .site-header__logo-image {
     max-width: 120px;
@@ -114,7 +114,7 @@
   }
     #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
       margin-top: -30px;
-      padding-bottom: 195px !important;
+      padding-bottom: 0 !important;
   }
 }
 @media screen and (max-width: 375px) {
@@ -126,7 +126,7 @@
   }
     #product-builder .cpb-theme-provider.alpine-white .cpb-layout {
       margin-top: -30px;
-      padding-bottom: 195px !important;
+      padding-bottom: 0 !important;
   }
     
 }
@@ -181,4 +181,11 @@
 }
 #product-builder .cpb-product-price .cpb-money {
   font-size: 1.26667em;
+}
+.js-drawer-open-top .drawer--top {
+  z-index: 10;
+}
+
+.Polaris-Tooltip .Polaris-Tooltip__Wrapper .Polaris-Tooltip__Label .cpb-money {
+  display: none;
 }

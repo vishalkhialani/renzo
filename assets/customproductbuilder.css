@@ -150,6 +150,10 @@
     width: 100px;
     height: 100px;
     flex-shrink: 0;
+    display: flex;
+  }
+  #product-builder .cpb-panel-categories-container .cpb-category-options-container .option .cpb-option__wrapper {
+    display: flex;
   }
   #product-builder .cpb-panel-categories-container .cpb-category-options-container .option .cpb-option.cpb-option-type-img {
     width: 100px;
@@ -295,3 +299,15 @@
     color: black;
  
 }
+
+/* release bugs fix */
+#product-builder .cpb-proxy-price {
+    font-size:26.3467px;
+  font-weight:600;
+  line-height:41px;
+  
+}
+#product-builder .cpb-product-price {
+    display: none;
+}
+/* the end of release bugs fix */
